@@ -28,7 +28,3 @@ def get_bottle_up_list():
             print(f"{drink_name}: {total_sold}")
     cursor.close()
     conn.close()
-
-
-if __name__ == "__main__":
-    get_bottle_up_list()

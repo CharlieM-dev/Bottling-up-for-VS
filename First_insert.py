@@ -1,4 +1,5 @@
 import mysql.connector
+from Creating_bottle_up_list import get_bottle_up_list
 
 
 def log_sale(drink_id, quantity_sold):
@@ -61,6 +62,7 @@ def log_sale(drink_id, quantity_sold):
         print(
             f'Sale logged: {quantity_sold}x {drink_name} ID {drink_id}.')
         print(f'Current stock: {stock_current}.')
+        get_bottle_up_list()
 
     except Exception as e:
         conn.rollback()
